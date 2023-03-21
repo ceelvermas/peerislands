@@ -1,0 +1,15 @@
+{
+  "tableName": "table1",
+  "columns": [
+    {
+      "operator": "IN",
+      "fieldName": "column1",
+      "fieldValue": "value"
+    },
+    {
+      "operator": "=",
+      "fieldName": "column2",
+      "fieldValue": "value"
+    }
+  ]
+}
