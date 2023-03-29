@@ -1,0 +1,14 @@
+{
+  "type": "select",
+  "table" : "customer",
+  "columns": [ "name", "email" ],
+  "where" : {
+    "customerId" : {
+      "$IN" : {
+          "type" : "select",
+          "table" : "orders",
+          "columns" : [ "customerId" ]
+      }
+    }
+  }
+}

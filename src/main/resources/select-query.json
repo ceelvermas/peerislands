@@ -1,0 +1,14 @@
+{
+  "type" : "select",
+  "table" : "employee",
+  "where" : {
+    "and": {
+      "firstName" : "Shyam",
+      "salary": {">" : "10000"}
+    },
+    "or": {
+      "firstName" : "Shyam",
+        "salary": {"=" : "10000"}
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type" : "create-table",
+  "table" : "employee",
+   "definition" : {
+      "id" :  {
+        "type": "serial",
+        "primaryKey": true
+      },
+      "firstName" : {
+        "type": "varchar"
+      },
+     "lastName" : {
+       "type": "varchar"
+     },
+     "salary" : {
+       "type": "bigint"
+     }
+  }
+}

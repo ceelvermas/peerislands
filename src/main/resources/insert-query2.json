@@ -1,0 +1,24 @@
+{
+  "type" : "create-table",
+  "table" : "address",
+   "definition" : {
+      "id" :  {
+        "type": "serial",
+        "primaryKey": true
+      },
+      "emp_id" : {
+        "type": "int",
+        "references" : {
+          "table" : "employee",
+          "column": "id"
+        }
+      },
+     "addressLine1" : {
+       "type": "varchar"
+     },
+     ,
+     "city" : {
+       "type": "varchar"
+     }
+  }
+}

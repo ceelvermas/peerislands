@@ -1,0 +1,13 @@
+{
+  "type": "insert",
+  "table" : "employee",
+  "columns": [ "name", "email" ],
+  "expression" : {
+    "type" : "select",
+    "table" : "other_users",
+    "columns" : [ "name", "email" ],
+    "where" : {
+      "id": "7"
+    }
+  }
+}
